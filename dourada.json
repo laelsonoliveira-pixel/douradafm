@@ -1,1 +1,214 @@
-json
+{
+  "schema_version": "1.0.0",
+  "app": {
+    "id": "br.com.douradafm.radio",
+    "name": "Dourada FM",
+    "display_name": "Dourada FM",
+    "version": "1.0.0",
+    "language": "pt-BR",
+    "timezone": "America/Sao_Paulo",
+    "description": "Aplicativo oficial da Dourada FM, em Cachoeira Dourada, Goiás.",
+    "default_route": "player",
+    "support_email": "",
+    "privacy_policy_url": ""
+  },
+  "radio": {
+    "name": "Dourada FM",
+    "frequency": "105,1 FM",
+    "slogan": "",
+    "city": "Cachoeira Dourada",
+    "state": "GO",
+    "country": "Brasil",
+    "website": "https://radiodouradacd.com.br",
+    "logo": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/logo.png",
+    "app_icon": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/app_icon.png",
+    "background_image": "",
+    "primary_color": "#0B4A82",
+    "secondary_color": "#FFC857",
+    "background_color": "#071B32",
+    "stream": "https://ssl1.transmissaodigital.com:20017/stream",
+    "fallback_stream": "",
+    "stream_format": "audio/mpeg",
+    "stream_provider": "SHOUTcast/Icecast",
+    "enabled": true
+  },
+  "streams": [
+    {
+      "id": "dourada-fm-live",
+      "name": "Dourada FM — Ao vivo",
+      "description": "Transmissão ao vivo da Dourada FM",
+      "url": "https://ssl1.transmissaodigital.com:20017/stream",
+      "type": "audio",
+      "enabled": true,
+      "is_default": true
+    }
+  ],
+  "metadata": {
+    "enabled": true,
+    "type": "icy",
+    "source": "stream",
+    "refresh_interval_seconds": 15,
+    "fields": [
+      "title",
+      "artist",
+      "album",
+      "artwork_url"
+    ],
+    "fallback_title": "Dourada FM — Ao vivo",
+    "fallback_artist": "Cachoeira Dourada • Goiás",
+    "artwork_fallback_url": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/logo.png",
+    "notes": "A exibição de música/artista depende de o servidor de streaming enviar metadados ICY. Se não enviar, o aplicativo exibe os textos alternativos."
+  },
+  "playback": {
+    "background_audio_enabled": true,
+    "lock_screen_controls_enabled": true,
+    "notification_controls_enabled": true,
+    "show_notification_title": true,
+    "show_notification_artist": true,
+    "pause_on_phone_call": true,
+    "resume_after_phone_call": true,
+    "respect_other_audio": true,
+    "reconnect_on_stream_error": true,
+    "reconnect_delay_seconds": 5
+  },
+  "navigation": [
+    {
+      "id": "player",
+      "label": "Ouvir rádio",
+      "icon": "radio",
+      "enabled": true
+    },
+    {
+      "id": "news",
+      "label": "Notícias",
+      "icon": "newspaper",
+      "enabled": true
+    },
+    {
+      "id": "schedule",
+      "label": "Programação",
+      "icon": "calendar",
+      "enabled": true
+    },
+    {
+      "id": "team",
+      "label": "Locutores",
+      "icon": "mic",
+      "enabled": true
+    },
+    {
+      "id": "live_video",
+      "label": "Câmera ao vivo",
+      "icon": "videocam",
+      "enabled": true
+    },
+    {
+      "id": "podcasts",
+      "label": "Podcasts",
+      "icon": "podcasts",
+      "enabled": true
+    },
+    {
+      "id": "promotions",
+      "label": "Promoções",
+      "icon": "campaign",
+      "enabled": true
+    },
+    {
+      "id": "contact",
+      "label": "Contato",
+      "icon": "contact_support",
+      "enabled": true
+    }
+  ],
+  "social": {
+    "instagram": {
+      "enabled": false,
+      "url": "",
+      "label": "Instagram"
+    },
+    "facebook": {
+      "enabled": false,
+      "url": "",
+      "label": "Facebook"
+    },
+    "youtube": {
+      "enabled": false,
+      "url": "",
+      "label": "YouTube"
+    },
+    "tiktok": {
+      "enabled": false,
+      "url": "",
+      "label": "TikTok"
+    },
+    "whatsapp": {
+      "enabled": true,
+      "url": "https://wa.me/5564992843784",
+      "label": "WhatsApp"
+    },
+    "website": {
+      "enabled": true,
+      "url": "https://radiodouradacd.com.br",
+      "label": "Site oficial"
+    }
+  },
+  "contact": {
+    "phone": {
+      "enabled": true,
+      "display": "(64) 3434-1051",
+      "number": "+556434341051",
+      "image": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/telefone.png"
+    },
+    "whatsapp": {
+      "enabled": true,
+      "display": "(64) 99284-3784",
+      "number": "+5564992843784",
+      "url": "https://wa.me/5564992843784",
+      "image": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/whatsapp.png"
+    },
+    "address": "",
+    "email": "",
+    "website": "https://radiodouradacd.com.br"
+  },
+  "video": {
+    "enabled": false,
+    "title": "Dourada FM — Câmera ao vivo",
+    "type": "hls",
+    "url": "",
+    "poster_url": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/logo.png",
+    "autoplay": false,
+    "notes": "Preencher url com o endereço autorizado do vídeo ao vivo, normalmente uma URL HLS .m3u8. Não foi fornecida uma URL de câmera neste pedido."
+  },
+  "presenters": [],
+  "schedule": [],
+  "news": [],
+  "promotions": [],
+  "podcasts": [],
+  "banners": [],
+  "push_notifications": {
+    "enabled": false,
+    "provider": "",
+    "default_title": "Dourada FM",
+    "default_body": "Fique ligado na programação da Dourada FM.",
+    "topics": [
+      "noticias",
+      "programacao",
+      "promocoes"
+    ]
+  },
+  "analytics": {
+    "enabled": false,
+    "provider": "",
+    "measurement_id": ""
+  },
+  "remote_content": {
+    "enabled": true,
+    "config_url": "https://raw.githubusercontent.com/laelsonoliveira-pixel/douradafm/refs/heads/main/dourada.json",
+    "news_url": "",
+    "schedule_url": "",
+    "timeout_seconds": 10,
+    "cache_last_successful_config": true
+  }
+}
+
